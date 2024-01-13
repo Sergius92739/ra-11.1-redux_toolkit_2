@@ -1,6 +1,6 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/j6po48rslqtpoa1b/branch/master?svg=true)](https://ci.appveyor.com/project/Sergius92739/ra-11-1-redux-toolkit-2/branch/master)
 
-## Deployment <a href="">Github Pages</a>
+## Deployment <a href="https://sergius92739.github.io/ra-11.1-redux_toolkit_2/">Github Pages</a>
 
 # Домашнее задание к занятию «Redux Toolkit»
 
