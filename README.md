@@ -1,10 +1,8 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/4anilrr3ycbltunh/branch/master?svg=true)](https://ci.appveyor.com/project/Sergius92739/ra-11-1-redux-toolkit-2/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/j6po48rslqtpoa1b/branch/master?svg=true)](https://ci.appveyor.com/project/Sergius92739/ra-11-1-redux-toolkit-2/branch/master)
 
 ## Deployment <a href="">Github Pages</a>
 
 # Домашнее задание к занятию «Redux Toolkit»
-
-===
 
 ### Задание: Поиск фильмов по каталогу IMDb и добавление найденных фильмов в "Избранное"
 
