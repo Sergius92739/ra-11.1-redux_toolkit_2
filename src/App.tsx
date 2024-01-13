@@ -1,4 +1,5 @@
 import React from 'react';
+import Loading from './components/Loading';
 
 export const movie = {
   "Title": "Terminator 2: Judgment Day",
@@ -44,7 +45,7 @@ export const movie = {
 function App() {
   return (
     <div>
-      app
+      <Loading/>
     </div>
   );
 }
