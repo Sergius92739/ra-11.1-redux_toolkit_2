@@ -1,13 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
 import React from 'react';
-import MovieCardView from './components/MovieCardView';
-import MoviePreview from './components/MoviePreview';
-import SearchFormView from './components/SearchFormView';
-import NotFound from './components/NotFound';
-import Menu from './components/Menu';
-import SearchListPage from './pages/SearchListPage';
-import Header from './components/Header';
-import Loading from './components/Loading';
 
 export const movie = {
   "Title": "Terminator 2: Judgment Day",
