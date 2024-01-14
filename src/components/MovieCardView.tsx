@@ -17,8 +17,6 @@ export type TMovieCardView = {
   Response: string
 }
 
-
-
 const MovieCardView = (props: TMovieCardView): JSX.Element => {
   const { Poster, Title, Year, Genre, Runtime, Director, Actors, imdbRating, Country, imdbID } = props;
   const dispatch = useAppDispatch();
@@ -96,4 +94,4 @@ const MovieCardView = (props: TMovieCardView): JSX.Element => {
   )
 }
 
-export default MovieCardView
+export default MovieCardView;
