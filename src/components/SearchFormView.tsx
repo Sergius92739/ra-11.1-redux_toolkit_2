@@ -45,6 +45,7 @@ const SearchFormView = ({ type }: TSearchFormView) => {
           name={type}
           onChange={handleChange}
           value={value}
+          required
         />
         <button className='p-3.5 ml-3 border-2 rounded-md'>Поиск</button>
       </div>

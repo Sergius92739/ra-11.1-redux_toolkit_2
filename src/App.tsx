@@ -12,9 +12,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<SearchListPage />} />
-          <Route path='search' element={<SearchByIdPage />} />
-          <Route path='favourites' element={<FavoritesPage />} />
-          <Route path='card/:imdbID' element={<MovieCard />} />
+          <Route path='/search' element={<SearchByIdPage />} />
+          <Route path='/favourites' element={<FavoritesPage />} />
+          <Route path='/card/:imdbID' element={<MovieCard />} />
         </Route>
       </Routes>
     </>
