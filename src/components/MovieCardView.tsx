@@ -1,7 +1,8 @@
 import React from 'react';
-import {useAppDispatch, useAppSelector} from '../hooks/hooks';
+import { useAppDispatch, useAppSelector } from '../hooks/hooks';
 import { selectFavoritesMovies, addToFavorites, deleteFromFavorites } from '../slices/moviesSlice';
 import { useNavigate } from 'react-router-dom';
+import { Paths } from '../paths';
 
 export type TMovieCardView = {
   Poster: string,
@@ -24,21 +25,21 @@ const MovieCardView = (props: TMovieCardView): JSX.Element => {
   const isFavorites = favorites.some(e => e.imdbID === imdbID);
   const navigate = useNavigate();
 
-  const onBtnClickHandler = (e: React.MouseEvent<HTMLButtonElement>) => {
-      if (!isFavorites) {
-        dispatch(addToFavorites({
-          Poster,
-          Title,
-          Year,
-          imdbID
-        }))
-        navigate('/')
-      } else {
-        if (imdbID) {
-          dispatch(deleteFromFavorites(imdbID))
-          navigate('/')
-        }
+  const onBtnClickHandler = () => {
+    if (!isFavorites) {
+      dispatch(addToFavorites({
+        Poster,
+        Title,
+        Year,
+        imdbID
+      }))
+      navigate(Paths.HOME)
+    } else {
+      if (imdbID) {
+        dispatch(deleteFromFavorites(imdbID))
+        navigate(Paths.HOME)
       }
+    }
   }
 
   return (

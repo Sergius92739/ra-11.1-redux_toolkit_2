@@ -2,6 +2,7 @@ import React, { ChangeEvent, FormEvent, useState } from 'react';
 import { fetchMovieById, fetchMovies } from '../slices/moviesSlice';
 import { useAppDispatch } from '../hooks/hooks';
 import { useNavigate } from 'react-router-dom';
+import { Paths } from '../paths';
 
 type TSearchFormView = {
   type: "byTitle" | "byID"
@@ -18,11 +19,11 @@ const SearchFormView = ({ type }: TSearchFormView) => {
     if (name === 'byTitle') {
       dispatch(fetchMovies(value));
       setvalue('')
-      navigate('/');
+      navigate(Paths.HOME);
     } else {
       dispatch(fetchMovieById(value));
       setvalue('');
-      navigate('/search');
+      navigate(Paths.SEARCH);
     }
     setvalue('');
   }
@@ -53,4 +54,4 @@ const SearchFormView = ({ type }: TSearchFormView) => {
   )
 }
 
-export default SearchFormView
+export default SearchFormView;

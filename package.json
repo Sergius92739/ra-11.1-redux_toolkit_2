@@ -1,5 +1,5 @@
 {
-  "name": "ra-11.1-redux_toolkit",
+  "name": "ra-11.1-redux_toolkit_2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -47,5 +47,5 @@
   "devDependencies": {
     "tailwindcss": "^3.4.1"
   },
-  "homepage": "https://sergius92739.github.io/ra-11.1-redux_toolkit_2"
+  "homepage": "https://sergius92739.github.io/ra-11.1-redux_toolkit_2/"
 }

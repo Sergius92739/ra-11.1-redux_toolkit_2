@@ -29,4 +29,4 @@ const SearchListPage = () => {
   )
 }
 
-export default SearchListPage
+export default SearchListPage;

@@ -30,4 +30,4 @@ const SearchByIdPage = () => {
   )
 }
 
-export default SearchByIdPage
+export default SearchByIdPage;

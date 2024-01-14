@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Paths } from '../paths'
 
 export type TFoundListItemView = {
   Poster: string,
@@ -10,7 +11,7 @@ export type TFoundListItemView = {
 
 const FoundListItemView = ({ Poster, Title, Year, imdbID }: TFoundListItemView) => {
   return (
-    <Link to={`/card/${imdbID}`}>
+    <Link to={`${Paths.CARD}/${imdbID}`}>
       <article className='flex flex-col justify-between p-3 text-white rounded-xl bg-[#361f36] hover:border h-full'>
         <div className="img">
           <img src={Poster} alt="Poster" />
