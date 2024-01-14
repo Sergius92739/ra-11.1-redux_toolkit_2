@@ -46,5 +46,6 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.4.1"
-  }
+  },
+  "homepage": "https://sergius92739.github.io/ra-11.1-redux_toolkit_2/"
 }
