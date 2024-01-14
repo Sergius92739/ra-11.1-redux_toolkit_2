@@ -2,7 +2,7 @@ import React from 'react'
 
 const NotFound = () => {
   return (
-    <h1 className='text-center p-5'>Фильмы не найдены</h1>
+    <div className='p-5 text-white text-xl text-center'>Фильмы не найдены</div>
   )
 }
 

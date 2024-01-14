@@ -1,24 +1,30 @@
 import React from 'react'
-import MoviePreview from '../components/MoviePreview';
-// import { movie } from '../App'
+import FoundListItemView from '../components/FoundListItemView';
 import SearchFormView from '../components/SearchFormView';
+import { useAppSelector } from '../hooks/hooks';
+import { selectFoundMovies, selectLoading } from '../slices/moviesSlice';
+import Loading from '../components/Loading';
+import NotFound from '../components/NotFound';
 
-type Props = {}
+const SearchListPage = () => {
+  const movies = useAppSelector(selectFoundMovies);
+  const loading = useAppSelector(selectLoading);
 
-const SearchListPage = (props: Props) => {
   return (
     <>
       <SearchFormView type='byTitle' />
       <SearchFormView type='byID' />
       <div className='page'>
-        {/* <MoviePreview {...movie} />
-        <MoviePreview {...movie} />
-        <MoviePreview {...movie} />
-        <MoviePreview {...movie} />
-        <MoviePreview {...movie} />
-        <MoviePreview {...movie} />
-        <MoviePreview {...movie} /> */}
+        {
+          loading && <Loading />
+        }
+        {
+          (movies.Response === 'True') && movies.Search.map(el => <FoundListItemView key={el.imdbID} {...el} />)
+        }
       </div>
+      {
+        (movies.Response === 'False') && <NotFound />
+      }
     </>
   )
 }
